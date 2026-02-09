@@ -1,18 +1,18 @@
 #!/bin/bash
-# claude-peon installer
+# peon-ping installer
 # Installs Peon voice lines as Claude Code hook notifications
 set -euo pipefail
 
-INSTALL_DIR="$HOME/.claude/hooks/claude-peon"
+INSTALL_DIR="$HOME/.claude/hooks/peon-ping"
 SETTINGS="$HOME/.claude/settings.json"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
-echo "=== claude-peon installer ==="
+echo "=== peon-ping installer ==="
 echo ""
 
 # --- Prerequisites ---
 if [ "$(uname)" != "Darwin" ]; then
-  echo "Error: claude-peon requires macOS (uses afplay + AppleScript)"
+  echo "Error: peon-ping requires macOS (uses afplay + AppleScript)"
   exit 1
 fi
 

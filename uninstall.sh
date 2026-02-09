@@ -1,14 +1,14 @@
 #!/bin/bash
-# claude-peon uninstaller
+# peon-ping uninstaller
 # Removes peon hooks and optionally restores notify.sh
 set -euo pipefail
 
-INSTALL_DIR="$HOME/.claude/hooks/claude-peon"
+INSTALL_DIR="$HOME/.claude/hooks/peon-ping"
 SETTINGS="$HOME/.claude/settings.json"
 NOTIFY_BACKUP="$HOME/.claude/hooks/notify.sh.backup"
 NOTIFY_SH="$HOME/.claude/hooks/notify.sh"
 
-echo "=== claude-peon uninstaller ==="
+echo "=== peon-ping uninstaller ==="
 echo ""
 
 # --- Remove hook entries from settings.json ---

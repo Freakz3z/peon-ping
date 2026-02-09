@@ -1,16 +1,16 @@
 #!/bin/bash
-# claude-peon: Warcraft III Peon voice lines for Claude Code hooks
+# peon-ping: Warcraft III Peon voice lines for Claude Code hooks
 # Replaces notify.sh — handles sounds, tab titles, and notifications
 set -uo pipefail
 
-PEON_DIR="${CLAUDE_PEON_DIR:-$HOME/.claude/hooks/claude-peon}"
+PEON_DIR="${CLAUDE_PEON_DIR:-$HOME/.claude/hooks/peon-ping}"
 CONFIG="$PEON_DIR/config.json"
 STATE="$PEON_DIR/.state.json"
 
 INPUT=$(cat)
 
 # Debug log (comment out for quiet operation)
-# echo "$(date): peon hook — $INPUT" >> /tmp/claude-peon-debug.log
+# echo "$(date): peon hook — $INPUT" >> /tmp/peon-ping-debug.log
 
 # --- Load config ---
 eval "$(/usr/bin/python3 -c "
