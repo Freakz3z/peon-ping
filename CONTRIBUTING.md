@@ -105,16 +105,6 @@ Submit your pack to the [OpenPeon registry](https://github.com/PeonPing/registry
 
 Once merged, your pack will be installable by everyone and listed on [openpeon.com/packs](https://openpeon.com/packs).
 
-### 5. Bump the version
-
-We use [semver](https://semver.org/). Edit the `VERSION` file in the repo root:
-
-- **New sound pack** → bump the patch version (e.g. `1.0.0` → `1.0.1`)
-- **New feature** (new hook event, config option) → bump the minor version (e.g. `1.0.1` → `1.1.0`)
-- **Breaking change** (config format change, removed feature) → bump the major version
-
-Users with an older version will see an update notice on session start.
-
 ## Automate pack creation
 
 Have a single audio file with all your character's quotes? You can auto-transcribe and split it:

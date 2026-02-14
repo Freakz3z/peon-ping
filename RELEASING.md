@@ -88,9 +88,4 @@ There's no release branch — `main` is always the release branch.
 1. Generates SHA256 checksums for all core files
 2. Creates a GitHub Release using `softprops/action-gh-release` with `generate_release_notes: true`
 3. Attaches `checksums.txt` as a release asset
-
-It does NOT update the Homebrew tap — that's manual (see step 5 above).
-
-## Future automation
-
-The Homebrew tap update (step 5) could be automated by adding a job to `release.yml` that computes the tarball sha256 and pushes a formula update to `PeonPing/homebrew-tap`. This would require a `TAP_TOKEN` secret with write access to the tap repo.
+4. The `update-tap` job automatically updates `PeonPing/homebrew-tap` with the new tarball SHA256 (requires `TAP_TOKEN` secret)
